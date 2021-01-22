@@ -13,7 +13,7 @@ struct ItemList: View {
     @State var newTodo: String = "";
     @State var newDescription: String = "";
     
-    var searchBar: some View {
+    var newItemBar: some View {
         HStack {
             VStack {
                 TextField("너의 빵댕이는", text: self.$newTodo)
@@ -40,7 +40,6 @@ struct ItemList: View {
     var body: some View {
         NavigationView {
             VStack {
-                searchBar.padding()
                 List {
                     ForEach(self.taskStore.tasks) { task in
                         NavigationLink(destination: ItemDetail(item: task)) {
@@ -48,9 +47,14 @@ struct ItemList: View {
                         }
                     }.onMove(perform: self.move)
                     .onDelete(perform: self.delete)
+                    .buttonStyle(PlainButtonStyle())
 
-                }.navigationBarTitle("자기소개를 해보자")
+                }
+                .listStyle(InsetGroupedListStyle())
+                .navigationBarTitle("자기소개")
                 .navigationBarItems(trailing: EditButton())
+                
+                newItemBar.padding()
             }
         }
     }
