@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		2AC72C1725BB0D1800B4755F /* watcher_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC72C1625BB0D1800B4755F /* watcher_iosApp.swift */; };
-		2AC72C1925BB0D1800B4755F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC72C1825BB0D1800B4755F /* ContentView.swift */; };
+		2AC72C1925BB0D1800B4755F /* ItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC72C1825BB0D1800B4755F /* ItemList.swift */; };
 		2AC72C1B25BB0D1C00B4755F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AC72C1A25BB0D1C00B4755F /* Assets.xcassets */; };
 		2AC72C1E25BB0D1C00B4755F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AC72C1D25BB0D1C00B4755F /* Preview Assets.xcassets */; };
 		2AC72C2925BB0D1C00B4755F /* watcher_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC72C2825BB0D1C00B4755F /* watcher_iosTests.swift */; };
 		2AC72C3425BB0D1C00B4755F /* watcher_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC72C3325BB0D1C00B4755F /* watcher_iosUITests.swift */; };
 		2AC72C4525BB130200B4755F /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC72C4425BB130200B4755F /* DataStore.swift */; };
+		2AC72C5325BB184A00B4755F /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC72C5225BB184A00B4755F /* ItemDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		2AC72C1325BB0D1800B4755F /* watcher-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watcher-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AC72C1625BB0D1800B4755F /* watcher_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watcher_iosApp.swift; sourceTree = "<group>"; };
-		2AC72C1825BB0D1800B4755F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2AC72C1825BB0D1800B4755F /* ItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemList.swift; sourceTree = "<group>"; };
 		2AC72C1A25BB0D1C00B4755F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AC72C1D25BB0D1C00B4755F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2AC72C1F25BB0D1C00B4755F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		2AC72C3325BB0D1C00B4755F /* watcher_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watcher_iosUITests.swift; sourceTree = "<group>"; };
 		2AC72C3525BB0D1C00B4755F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AC72C4425BB130200B4755F /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		2AC72C5225BB184A00B4755F /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				2AC72C1625BB0D1800B4755F /* watcher_iosApp.swift */,
-				2AC72C1825BB0D1800B4755F /* ContentView.swift */,
+				2AC72C1825BB0D1800B4755F /* ItemList.swift */,
+				2AC72C5225BB184A00B4755F /* ItemDetail.swift */,
 				2AC72C1A25BB0D1C00B4755F /* Assets.xcassets */,
 				2AC72C1F25BB0D1C00B4755F /* Info.plist */,
 				2AC72C1C25BB0D1C00B4755F /* Preview Content */,
@@ -262,7 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AC72C1925BB0D1800B4755F /* ContentView.swift in Sources */,
+				2AC72C1925BB0D1800B4755F /* ItemList.swift in Sources */,
+				2AC72C5325BB184A00B4755F /* ItemDetail.swift in Sources */,
 				2AC72C4525BB130200B4755F /* DataStore.swift in Sources */,
 				2AC72C1725BB0D1800B4755F /* watcher_iosApp.swift in Sources */,
 			);

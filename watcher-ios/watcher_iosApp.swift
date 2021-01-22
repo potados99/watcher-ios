@@ -11,7 +11,7 @@ import SwiftUI
 struct watcher_iosApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ItemList()
         }
     }
 }
